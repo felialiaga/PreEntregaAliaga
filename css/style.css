@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "roboto";
+    src: url(../assets/Roboto-Medium.ttf);
+}
 
 *{
     margin: 0;
@@ -8,132 +12,111 @@
 }
 
 body{
-    background-color: #FFF8DE;
+    background-color: #fff;
 }
-
-@font-face {
-    font-family: "roboto";
-    src: url(../assets/Roboto-Medium.ttf);
-}
-
-
-
-
-
-/* ---------------------------PRIMER HTML--------------------------------- */
-
-
-
-
-/* header */
-
-
 
 .img-logo{
-    width: 5%;
+    width: 100px;
+}
+
+.contenedor{
+    background-color: #B0DAFF;
+    padding: 10px;
 }
 
 .navMenu{
-    background-color: #D6E8DB;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    margin-top: 1%;
-}
-
-.navMenu a{
-    text-decoration: none;
-    font-size: 25px;
+    text-transform: uppercase;
     color: #000;
 }
 
-.navMenu ul{
-    list-style-type: none;
-    display: flex;
-    gap: 35px;
-    text-transform: uppercase;
-    margin-right: 7%;
+.img-etiquetas{
+    width: 40px;
+    margin-right: 2%;
 }
 
-.navMenu img{
-    width: 5%;
-}
-
-
-
-/* main */
-
-
-
-.h1{
-    margin-top: 78px;
-    text-align: center;
-}
-
-.img{
-    width: 20%;
-}
-
-.section{
-   padding: 50px 15px;
-   text-align: center;
-}
-
-.div-body img{
-    width: 350px;
-    height: 350px;
+.carrousel-cambios, .carousel-item .carousel-item img{
+    height: 60vh;
     object-fit: cover;
 }
 
-.div-body{
-    display: inline-block;
-    width: 28%;
-    text-align: center;
-    margin: 10px;
+.etiqueta__superior{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
 }
 
-.logo{
-    width: 15%;
+.etiquetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 2%;
+    align-content: center;
+}
+
+.etiqueta{
+    padding: 2%;
+    border-right: 1px solid black;
+}
+
+.ultima-etiqueta{
+    border-right: none;
+}
+
+.logos{
+    width: 200px;
     border-radius: 100%;
 }
 
-.quienes-somos h2{
-    font-size: 33px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 37px;
+.sobre-nosotros{
+    margin-top: 3%;
+    padding: 1%;
+    gap: 1%;
 }
 
-.quienes-somos h4{
-    padding: 11px;
-
+.sobre-feli{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1%;
+    margin-bottom:2%;
+    margin-top: 2%;
 }
 
-.colecciones{
-    margin-top: 25px;
+.sobre-andre{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1%;
+    flex-direction: row-reverse;
 }
 
-.colecciones h3{
+.sobre-andre p, .sobre-feli p{
+    width: 70%;
+    padding: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
     text-align: center;
-    color: brown;
-    margin: 60px 0px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
-.logoHombre h4, .logoMujer h4{
-    display: inline-block;
-    width: 350px;
-    position: relative;
-    bottom: 110px;
-    padding: 10px 30px;
-    font-size: 19px;
+.nosotros{
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.logoHombre, .logoMujer{
-    margin: 19px;
+.nosotros p{
+    width: 60%;
 }
 
-main{
-    margin-bottom: 35px;
+.sobre-nosotros h5{
+    text-align: center;
 }
 
 
@@ -141,125 +124,66 @@ main{
 /* footer */
 
 
+
 footer{
-    background-color: #d9e7ce;
-    height: auto;
-    padding: 15px;
-    
+    height: 30vh;
+    background-color: #bcd0e2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 10vh;
+    grid-template-areas: 
+    'ig wsp'
+    'creditos creditos'
+    ;
+}
+
+.footer-img{
+    width: 30px;
 }
 
 .ig{
+    grid-area: ig;
     display: flex;
-    width: 170px;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
 }
 
-footer img{
-    width: 2%;
+.ig h3{
+    font-size: 40px;
 }
 
-
-
-
-
-
-/* ---------------------------SEGUNDO HTML Y TERCER HTML Y CUARTO HTML--------------------------------- */
-
-
-
-
-.card{
-    text-align: center;
-    padding: 50px 15px;
+.ig-feli{
+    display: flex;
+    padding: 2%;
+    gap: 3%;
 }
 
-.card-body img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+.ig-andre{
+    display: flex;
+    gap: 3%;
 }
 
-.card-body h4{
-    margin-top: 7px;
+.wsp{
+    grid-area: wsp;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
 }
 
-.card-body{
-    width: 22%;
-    display: inline-block;
-    text-align: center;
-    margin: 14px;
-    background-color: rgb(240, 225, 203);
-    border: 1px solid black;
+.wsp h3{
+    font-size: 40px;
 }
 
-.card-body h4{
-    padding: 14px;
+.wsp-feli{
+    display: flex;
+    padding: 2%;
 }
 
-.catalogo h2{
-    font-size: 28px;
-    text-align: center;
-    font-family: cursive;
-    margin: 65px 0px;
+.creditos{
+    grid-area: creditos;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.catalogo h3{
-    text-align: center;
-}
-
-.cartel{
-    position: absolute;
-    background-color: rgb(235, 78, 109);
-    padding: 4px;
-    color: #fff;
-    top: 350px;
-    left: 450px;
-}
-
-.cartel-oferta{
-    position: absolute;
-    background-color: rgb(111, 210, 223);
-    padding: 4px;
-    color: #000;
-    top: 350px;
-    left: 442px;
-}
-
-
-
-
-
-
-
-/* ---------------------------QUINTO HTML--------------------------------- */
-
-
-
-
-
-
-
-.img-pagos{
-    text-align: center;
-}
-
-.titulo-pagos{
-    margin: 70px 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 32px;
-}
-
-.pagos ul li{
-    padding: 19px;
-    font-size: 21px;
-}
-
-.aviso h3{
-    text-align: center;
-    font-size: 27px;
-    margin: 80px 0px 110px 0px;
-}
-
-
-
-
-
