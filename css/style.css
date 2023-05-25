@@ -34,8 +34,8 @@ body{
     margin-right: 2%;
 }
 
-.carrousel-cambios, .carousel-item .carousel-item img{
-    height: 60vh;
+.carrousel-cambios, .carousel-item, .carousel-item img{
+    height: 700px;
     object-fit: cover;
 }
 
@@ -119,7 +119,47 @@ body{
     text-align: center;
 }
 
+.productos{
+    margin: 4%;
+    text-align: center;
+}
 
+.colores{
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    gap: 4%;
+}
+
+.celeste{
+    border-radius: 100%;
+    background-color: rgb(122, 204, 255);
+    color: rgb(122, 204, 255);
+}
+
+.negro{
+    border-radius: 100%;
+    background-color: #000;
+    color: #000;
+}
+
+.blanco{
+    border-radius: 100%;
+    background-color: #fff;
+    color: #fff;
+}
+
+.verde{
+    border-radius: 100%;
+    background-color: #166b2c;
+    color: #166b2c;
+}
+
+.rosa{
+    border-radius: 100%;
+    background-color: rgb(255, 203, 212);
+    color: rgb(255, 203, 212);
+}
 
 /* footer */
 
