@@ -161,6 +161,20 @@ body{
     color: rgb(255, 203, 212);
 }
 
+
+.card:hover{
+    box-shadow: 5px 5px 25px #000;
+}
+
+.navMenu:hover{
+    color: #999;
+    border-bottom: 1px solid #999;
+    padding: 1%;
+}
+
+
+
+
 /* footer */
 
 
