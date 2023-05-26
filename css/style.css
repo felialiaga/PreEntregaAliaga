@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: #fff;
+    background-color: #EEE3CB;
 }
 
 .img-logo{
@@ -20,7 +20,7 @@ body{
 }
 
 .contenedor{
-    background-color: #B0DAFF;
+    background-color: #B7C4CF;
     padding: 10px;
 }
 
@@ -251,13 +251,55 @@ body{
 }
 
 
+/* PAGOS */
+
+
+.medios-pago{
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'pagos imagen'
+    'aviso aviso'
+    ;
+    margin: 2%;
+}
+
+.pagos ul li{
+    padding: 15px;
+    font-size: 25px;
+}
+
+.pagos{
+    grid-area: pagos;
+    margin-top: 3%;
+}
+
+.aviso{
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    grid-area: aviso;
+}
+
+.img-pagos{
+    display: flex;
+    justify-content: center;
+    grid-area: imagen;
+}
+
+.img-pagos img{
+    width: 700px;
+}
+
+
 /* footer */
 
 
 
 footer{
     height: 30vh;
-    background-color: #bcd0e2;
+    background-color: #D7C0AE;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20vh 10vh;
