@@ -1,0 +1,416 @@
+@font-face {
+    font-family: "roboto";
+    src: url(../assets/Roboto-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body{
+    background-color: #EEE3CB;
+}
+
+.img-logo{
+    width: 100px;
+}
+
+.contenedor{
+    background-color: #B7C4CF;
+    padding: 10px;
+}
+
+.navMenu{
+    text-transform: uppercase;
+    color: #000;
+}
+
+.img-etiquetas{
+    width: 40px;
+    margin-right: 2%;
+}
+
+.carrousel-cambios, .carousel-item, .carousel-item img{
+    height: 700px;
+    object-fit: cover;
+}
+
+.etiqueta__superior{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+.etiquetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 2%;
+    align-content: center;
+}
+
+.etiqueta{
+    padding: 2%;
+    border-right: 1px solid black;
+}
+
+.ultima-etiqueta{
+    border-right: none;
+}
+
+.logos{
+    width: 200px;
+    border-radius: 100%;
+}
+
+.sobre-nosotros{
+    margin-top: 3%;
+    padding: 1%;
+    gap: 1%;
+}
+
+.sobre-feli{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1%;
+    margin-bottom:2%;
+    margin-top: 2%;
+}
+
+.sobre-andre{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1%;
+    flex-direction: row-reverse;
+}
+
+.sobre-andre p, .sobre-feli p{
+    width: 70%;
+    padding: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.nosotros{
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nosotros p{
+    width: 60%;
+}
+
+.sobre-nosotros h5{
+    text-align: center;
+}
+
+.productos{
+    margin: 4%;
+    text-align: center;
+}
+
+.colores{
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    gap: 4%;
+}
+
+.celeste{
+    border-radius: 100%;
+    background-color: rgb(122, 204, 255);
+    color: rgb(122, 204, 255);
+}
+
+.negro{
+    border-radius: 100%;
+    background-color: #000;
+    color: #000;
+}
+
+.blanco{
+    border-radius: 100%;
+    background-color: #fff;
+    color: #fff;
+}
+
+.verde{
+    border-radius: 100%;
+    background-color: #166b2c;
+    color: #166b2c;
+}
+
+.rosa{
+    border-radius: 100%;
+    background-color: rgb(255, 203, 212);
+    color: rgb(255, 203, 212);
+}
+
+
+.card:hover{
+    box-shadow: 5px 5px 25px #000;
+}
+
+.navMenu:hover{
+    color: #666;
+    border-bottom: 1px solid #666;
+    padding: 1%;
+}
+
+
+/* GALERIA */
+
+
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-areas: 
+    'foto1 foto1 foto2 foto3'
+    'foto1 foto1 foto4 foto5'
+    'foto6 foto7 foto8 foto8'
+    'foto9 foto10 foto8 foto8'
+    'foto11 foto10 foto12 foto13'
+    ;
+    gap: 15px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.foto1{
+    grid-area: foto1;
+}
+
+.foto2{
+    grid-area: foto2;
+}
+
+.foto3{
+    grid-area: foto3;
+}
+
+.foto4{
+    grid-area: foto4;
+}
+
+.foto5{
+    grid-area: foto5;
+}
+
+.foto6{
+    grid-area: foto6;
+}
+
+.foto7{
+    grid-area: foto7;
+}
+
+.foto8{
+    grid-area: foto8;
+}
+
+.foto9{
+    grid-area: foto9;
+}
+
+.foto10{
+    grid-area: foto10;
+}
+
+.foto11{
+    grid-area: foto11;
+}
+
+.foto12{
+    grid-area: foto12;
+}
+
+.foto13{
+    grid-area: foto13;
+}
+
+
+/* PAGOS */
+
+
+.medios-pago{
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'pagos imagen'
+    'aviso aviso'
+    ;
+    margin: 2%;
+}
+
+.pagos ul li{
+    padding: 15px;
+    font-size: 25px;
+}
+
+.pagos{
+    grid-area: pagos;
+    margin-top: 3%;
+}
+
+.aviso{
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    grid-area: aviso;
+}
+
+.img-pagos{
+    display: flex;
+    justify-content: center;
+    grid-area: imagen;
+}
+
+.img-pagos img{
+    width: 700px;
+}
+
+
+/* footer */
+
+
+
+footer{
+    height: 35vh;
+    background-color: #D7C0AE;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 10vh;
+    grid-template-areas: 
+    'ig wsp'
+    'creditos creditos'
+    ;
+}
+
+.footer-img{
+    width: 30px;
+}
+
+.ig{
+    grid-area: ig;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+}
+
+.ig h3{
+    font-size: 40px;
+}
+
+.ig-feli{
+    display: flex;
+    padding: 2%;
+    gap: 3%;
+}
+
+.ig-andre{
+    display: flex;
+    gap: 3%;
+}
+
+.wsp{
+    grid-area: wsp;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+}
+
+.wsp h3{
+    font-size: 40px;
+}
+
+.wsp-feli{
+    display: flex;
+    padding: 2%;
+}
+
+.creditos{
+    grid-area: creditos;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+/* MEDIA QUERIS */
+
+
+@media only screen and (max-width: 576px){
+    .etiquetas{
+        display: flex;
+        flex-direction: column;
+    }
+    .etiqueta{
+        border: none;
+    }
+
+    .sobre-feli, .sobre-andre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logos{
+        margin-bottom: 10px;
+    }
+
+    footer, .creditos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ropa-hombre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 90%;
+    }
+}
+
+
+@import "base/variables";
+@import "base/resets";
+
+@import "components/footer";
+@import "components/navbar";
+
+@import "layout/index";
+@import "layout/hombre";
+@import "layout/mujer";
+@import "layout/galeria";
+@import "layout/pagos";
+
