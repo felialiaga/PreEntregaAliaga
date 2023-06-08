@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "roboto";
-  src: url(../assets/Roboto-Medium.ttf);
-}
 * {
   margin: 0;
   padding: 0;
@@ -28,21 +24,64 @@ body {
   color: #000;
 }
 
-.img-etiquetas {
-  width: 40px;
-  margin-right: 2%;
+footer {
+  height: 35vh;
+  background-color: #D7C0AE;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20vh 10vh;
+  grid-template-areas: "ig wsp" "creditos creditos";
 }
 
-.carrousel-cambios, .carousel-item, .carousel-item img {
-  height: 700px;
-  object-fit: cover;
+.footer-img {
+  width: 30px;
 }
 
-.etiqueta__superior {
+.ig {
+  grid-area: ig;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 1%;
+  gap: 3%;
+}
+
+.ig h3 {
+  font-size: 40px;
+}
+
+.ig-feli {
+  display: flex;
+  padding: 2%;
+  gap: 3%;
+}
+
+.ig-andre {
+  display: flex;
+  gap: 3%;
+}
+
+.wsp {
+  grid-area: wsp;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3%;
+}
+
+.wsp h3 {
+  font-size: 40px;
+}
+
+.wsp-feli {
+  display: flex;
+  padding: 2%;
+}
+
+.creditos {
+  grid-area: creditos;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .etiquetas {
@@ -52,19 +91,22 @@ body {
   margin-top: 2%;
   align-content: center;
 }
-
-.etiqueta {
+.etiquetas .etiqueta {
   padding: 2%;
   border-right: 1px solid black;
 }
-
-.ultima-etiqueta {
-  border-right: none;
+.etiquetas .etiqueta__superior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
 }
-
-.logos {
-  width: 200px;
-  border-radius: 100%;
+.etiquetas .etiqueta__superior .img-etiquetas {
+  width: 40px;
+  margin-right: 2%;
+}
+.etiquetas .ultima-etiqueta {
+  border-right: none;
 }
 
 .sobre-nosotros {
@@ -72,8 +114,21 @@ body {
   padding: 1%;
   gap: 1%;
 }
-
-.sobre-feli {
+.sobre-nosotros h5 {
+  text-align: center;
+}
+.sobre-nosotros .nosotros {
+  padding: 1%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sobre-nosotros .nosotros p {
+  width: 60%;
+}
+.sobre-nosotros .sobre-feli {
   display: flex;
   width: 100%;
   align-items: center;
@@ -81,16 +136,14 @@ body {
   margin-bottom: 2%;
   margin-top: 2%;
 }
-
-.sobre-andre {
+.sobre-nosotros .sobre-andre {
   display: flex;
   width: 100%;
   align-items: center;
   padding: 1%;
   flex-direction: row-reverse;
 }
-
-.sobre-andre p, .sobre-feli p {
+.sobre-nosotros .sobre-andre p, .sobre-nosotros .sobre-feli p {
   width: 70%;
   padding: 2%;
   margin-left: 1%;
@@ -100,22 +153,14 @@ body {
   border-radius: 10px;
   font-size: 20px;
 }
-
-.nosotros {
-  padding: 1%;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.sobre-nosotros .logos {
+  width: 200px;
+  border-radius: 100%;
 }
 
-.nosotros p {
-  width: 60%;
-}
-
-.sobre-nosotros h5 {
-  text-align: center;
+.carrousel-cambios, .carousel-item, .carousel-item img {
+  height: 500px;
+  object-fit: cover;
 }
 
 .productos {
@@ -129,48 +174,32 @@ body {
   margin: 1%;
   gap: 4%;
 }
-
-.celeste {
+.colores .celeste {
   border-radius: 100%;
   background-color: rgb(122, 204, 255);
   color: rgb(122, 204, 255);
 }
-
-.negro {
+.colores .negro {
   border-radius: 100%;
   background-color: #000;
   color: #000;
 }
-
-.blanco {
+.colores .blanco {
   border-radius: 100%;
   background-color: #fff;
   color: #fff;
 }
-
-.verde {
+.colores .verde {
   border-radius: 100%;
   background-color: #166b2c;
   color: #166b2c;
 }
-
-.rosa {
+.colores .rosa {
   border-radius: 100%;
   background-color: rgb(255, 203, 212);
   color: rgb(255, 203, 212);
 }
 
-.card:hover {
-  box-shadow: 5px 5px 25px #000;
-}
-
-.navMenu:hover {
-  color: #666;
-  border-bottom: 1px solid #666;
-  padding: 1%;
-}
-
-/* GALERIA */
 .galeria {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -238,7 +267,6 @@ body {
   grid-area: foto13;
 }
 
-/* PAGOS */
 .medios-pago {
   display: grid;
   grid-template-columns: 1fr 700px;
@@ -274,74 +302,12 @@ body {
   width: 700px;
 }
 
-/* footer */
-footer {
-  height: 35vh;
-  background-color: #D7C0AE;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20vh 10vh;
-  grid-template-areas: "ig wsp" "creditos creditos";
-}
-
-.footer-img {
-  width: 30px;
-}
-
-.ig {
-  grid-area: ig;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3%;
-}
-
-.ig h3 {
-  font-size: 40px;
-}
-
-.ig-feli {
-  display: flex;
-  padding: 2%;
-  gap: 3%;
-}
-
-.ig-andre {
-  display: flex;
-  gap: 3%;
-}
-
-.wsp {
-  grid-area: wsp;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3%;
-}
-
-.wsp h3 {
-  font-size: 40px;
-}
-
-.wsp-feli {
-  display: flex;
-  padding: 2%;
-}
-
-.creditos {
-  grid-area: creditos;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* MEDIA QUERIS */
 @media only screen and (max-width: 576px) {
   .etiquetas {
     display: flex;
     flex-direction: column;
   }
-  .etiqueta {
+  .etiquetas .etiqueta {
     border: none;
   }
   .sobre-feli, .sobre-andre {
@@ -349,7 +315,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .logos {
+  .sobre-feli .logos, .sobre-andre .logos {
     margin-bottom: 10px;
   }
   footer, .creditos {
@@ -362,8 +328,20 @@ footer {
     align-items: center;
   }
   .card {
-    width: 90%;
+    width: 80%;
   }
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../assets/Roboto-Medium.ttf);
+}
+.card:hover {
+  box-shadow: 5px 5px 25px #000;
+}
+
+.navMenu:hover {
+  border-bottom: 1px solid #666;
+  padding: 1%;
 }
 
 /*# sourceMappingURL=style.css.map */

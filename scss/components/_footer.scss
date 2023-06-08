@@ -1,0 +1,62 @@
+footer{
+    height: 35vh;
+    background-color: #D7C0AE;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 10vh;
+    grid-template-areas: 
+    'ig wsp'
+    'creditos creditos'
+    ;
+}
+
+.footer-img{
+    width: 30px;
+}
+
+.ig{
+    grid-area: ig;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+}
+
+.ig h3{
+    font-size: 40px;
+}
+
+.ig-feli{
+    display: flex;
+    padding: 2%;
+    gap: 3%;
+}
+
+.ig-andre{
+    display: flex;
+    gap: 3%;
+}
+
+.wsp{
+    grid-area: wsp;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+}
+
+.wsp h3{
+    font-size: 40px;
+}
+
+.wsp-feli{
+    display: flex;
+    padding: 2%;
+}
+
+.creditos{
+    grid-area: creditos;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

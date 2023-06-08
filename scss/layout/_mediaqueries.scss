@@ -1,0 +1,33 @@
+@media only screen and (max-width: 576px){
+    .etiquetas{
+        display: flex;
+        flex-direction: column;
+        .etiqueta{
+            border: none;
+        }
+    }
+    
+    .sobre-feli, .sobre-andre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logos{
+            margin-bottom: 10px;
+        }
+    }
+
+    footer, .creditos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ropa-hombre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 80%;
+    }
+}
