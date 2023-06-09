@@ -10,22 +10,5 @@
 @import "layout/mujer";
 @import "layout/galeria";
 @import "layout/pagos";
-@import "layout/mediaqueries";
 @import "layout/animaciones";
-
-
-
-@font-face {
-    font-family: "roboto";
-    src: url(../assets/Roboto-Medium.ttf);
-}
-
-
-.card:hover{
-    box-shadow: 5px 5px 25px #000;
-}
-
-.navMenu:hover{
-    border-bottom: 1px solid #666;
-    padding: 1%;
-}
+@import "layout/mediaqueries";

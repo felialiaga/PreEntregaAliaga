@@ -7,5 +7,10 @@
 }
 
 body{
-    background-color: #EEE3CB;
+    background-image: radial-gradient(circle,#EEE3CB,#D7C0AE);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../assets/Roboto-Medium.ttf);
 }

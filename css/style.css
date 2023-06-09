@@ -7,21 +7,28 @@
 }
 
 body {
-  background-color: #EEE3CB;
+  background-image: radial-gradient(circle, #EEE3CB, #D7C0AE);
 }
 
-.img-logo {
-  width: 100px;
+@font-face {
+  font-family: "roboto";
+  src: url(../assets/Roboto-Medium.ttf);
 }
-
 .contenedor {
   background-color: #B7C4CF;
   padding: 10px;
+}
+.contenedor .img-logo {
+  width: 100px;
 }
 
 .navMenu {
   text-transform: uppercase;
   color: #000;
+}
+.navMenu:hover {
+  border-bottom: 1px solid #666;
+  padding: 1%;
 }
 
 footer {
@@ -168,33 +175,36 @@ footer {
   text-align: center;
 }
 
-.colores {
+.card:hover {
+  box-shadow: 5px 5px 25px #000;
+}
+.card .colores {
   display: flex;
   justify-content: center;
   margin: 1%;
   gap: 4%;
 }
-.colores .celeste {
+.card .colores .celeste {
   border-radius: 100%;
   background-color: rgb(122, 204, 255);
   color: rgb(122, 204, 255);
 }
-.colores .negro {
+.card .colores .negro {
   border-radius: 100%;
   background-color: #000;
   color: #000;
 }
-.colores .blanco {
+.card .colores .blanco {
   border-radius: 100%;
   background-color: #fff;
   color: #fff;
 }
-.colores .verde {
+.card .colores .verde {
   border-radius: 100%;
   background-color: #166b2c;
   color: #166b2c;
 }
-.colores .rosa {
+.card .colores .rosa {
   border-radius: 100%;
   background-color: rgb(255, 203, 212);
   color: rgb(255, 203, 212);
@@ -330,18 +340,6 @@ footer {
   .card {
     width: 80%;
   }
-}
-@font-face {
-  font-family: "roboto";
-  src: url(../assets/Roboto-Medium.ttf);
-}
-.card:hover {
-  box-shadow: 5px 5px 25px #000;
-}
-
-.navMenu:hover {
-  border-bottom: 1px solid #666;
-  padding: 1%;
 }
 
 /*# sourceMappingURL=style.css.map */

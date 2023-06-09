@@ -1,13 +1,19 @@
-.img-logo{
-    width: 100px;
-}
 
 .contenedor{
     background-color: #B7C4CF;
     padding: 10px;
+
+    .img-logo{
+        width: 100px;
+    }
 }
 
 .navMenu{
     text-transform: uppercase;
     color: #000;
+    &:hover{
+        border-bottom: 1px solid #666;
+        padding: 1%;
+    }
 }
+
