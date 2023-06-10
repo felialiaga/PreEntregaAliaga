@@ -44,9 +44,7 @@
         padding: 1%;
         width: 100%;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, center);
         p{
             width: 60%;
         }
@@ -62,15 +60,11 @@
     }
 
     .sobre-andre{
-        display: flex;
+        @include flex(row-reverse,center);
         width: 100%;
-        align-items: center;
         padding: 1%;
-        flex-direction: row-reverse;
         @media (max-width: 576px){
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(column,center);
         }
     }
 

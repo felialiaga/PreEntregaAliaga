@@ -18,9 +18,7 @@
     .galeria{
         width: 350px;
         object-fit: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column,center);
     }
 }
 
@@ -34,9 +32,7 @@
     }
     
     .sobre-feli, .sobre-andre{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column,center);
 
         .logos{
             margin-bottom: 10px;
@@ -50,14 +46,10 @@
     }
 
     .ropa-hombre{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column,center);
     }
 
     .card{
         width: 80%;
     }
 }
-
-
