@@ -39,56 +39,47 @@ footer {
   grid-template-rows: 20vh 10vh;
   grid-template-areas: "ig wsp" "creditos creditos";
 }
-
-.footer-img {
-  width: 30px;
-}
-
-.ig {
+footer .ig {
   grid-area: ig;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3%;
 }
-
-.ig h3 {
+footer .ig h3 {
   font-size: 40px;
 }
-
-.ig-feli {
+footer .ig-feli {
   display: flex;
   padding: 2%;
   gap: 3%;
 }
-
-.ig-andre {
+footer .ig-andre {
   display: flex;
   gap: 3%;
 }
-
-.wsp {
+footer .wsp {
   grid-area: wsp;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3%;
 }
-
-.wsp h3 {
+footer .wsp h3 {
   font-size: 40px;
 }
-
-.wsp-feli {
+footer .wsp-feli {
   display: flex;
   padding: 2%;
 }
-
-.creditos {
+footer .creditos {
   grid-area: creditos;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+footer .footer-img {
+  width: 30px;
 }
 
 .etiquetas {
@@ -149,6 +140,13 @@ footer {
   align-items: center;
   padding: 1%;
   flex-direction: row-reverse;
+}
+@media (max-width: 576px) {
+  .sobre-nosotros .sobre-andre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .sobre-nosotros .sobre-andre p, .sobre-nosotros .sobre-feli p {
   width: 70%;
@@ -217,63 +215,54 @@ footer {
   grid-template-areas: "foto1 foto1 foto2 foto3" "foto1 foto1 foto4 foto5" "foto6 foto7 foto8 foto8" "foto9 foto10 foto8 foto8" "foto11 foto10 foto12 foto13";
   gap: 15px;
 }
-
 .galeria img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-
-.foto1 {
+.galeria img:hover {
+  animation-name: animacion1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
+}
+.galeria .foto1 {
   grid-area: foto1;
 }
-
-.foto2 {
+.galeria .foto2 {
   grid-area: foto2;
 }
-
-.foto3 {
+.galeria .foto3 {
   grid-area: foto3;
 }
-
-.foto4 {
+.galeria .foto4 {
   grid-area: foto4;
 }
-
-.foto5 {
+.galeria .foto5 {
   grid-area: foto5;
 }
-
-.foto6 {
+.galeria .foto6 {
   grid-area: foto6;
 }
-
-.foto7 {
+.galeria .foto7 {
   grid-area: foto7;
 }
-
-.foto8 {
+.galeria .foto8 {
   grid-area: foto8;
 }
-
-.foto9 {
+.galeria .foto9 {
   grid-area: foto9;
 }
-
-.foto10 {
+.galeria .foto10 {
   grid-area: foto10;
 }
-
-.foto11 {
+.galeria .foto11 {
   grid-area: foto11;
 }
-
-.foto12 {
+.galeria .foto12 {
   grid-area: foto12;
 }
-
-.foto13 {
+.galeria .foto13 {
   grid-area: foto13;
 }
 
@@ -284,34 +273,55 @@ footer {
   grid-template-areas: "pagos imagen" "aviso aviso";
   margin: 2%;
 }
-
-.pagos ul li {
-  padding: 15px;
-  font-size: 25px;
-}
-
-.pagos {
+.medios-pago .pagos {
   grid-area: pagos;
   margin-top: 3%;
 }
-
-.aviso {
+.medios-pago .pagos ul li {
+  padding: 15px;
+  font-size: 25px;
+}
+.medios-pago .img-pagos {
+  display: flex;
+  justify-content: center;
+  grid-area: imagen;
+}
+.medios-pago .img-pagos img {
+  width: 700px;
+}
+.medios-pago .aviso {
   text-align: center;
   margin-top: 6%;
   margin-bottom: 2%;
   grid-area: aviso;
 }
 
-.img-pagos {
-  display: flex;
-  justify-content: center;
-  grid-area: imagen;
+@keyframes animacion1 {
+  0% {
+    transform: rotate(6deg);
+  }
 }
-
-.img-pagos img {
-  width: 700px;
+@media only screen and (max-width: 1480px) {
+  .card {
+    width: 40%;
+  }
+  .medios-pago {
+    display: flex;
+    flex-direction: column;
+  }
 }
-
+@media only screen and (max-width: 960px) {
+  .card {
+    width: 60%;
+  }
+  .galeria {
+    width: 350px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media only screen and (max-width: 576px) {
   .etiquetas {
     display: flex;

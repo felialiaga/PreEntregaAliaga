@@ -7,31 +7,31 @@
     'aviso aviso'
     ;
     margin: 2%;
-}
 
-.pagos ul li{
-    padding: 15px;
-    font-size: 25px;
-}
+    .pagos{
+        grid-area: pagos;
+        margin-top: 3%;
 
-.pagos{
-    grid-area: pagos;
-    margin-top: 3%;
-}
+        ul li{
+            padding: 15px;
+            font-size: 25px;
+        }
+    }
 
-.aviso{
-    text-align: center;
-    margin-top: 6%;
-    margin-bottom: 2%;
-    grid-area: aviso;
-}
+    .img-pagos{
+        display: flex;
+        justify-content: center;
+        grid-area: imagen;
 
-.img-pagos{
-    display: flex;
-    justify-content: center;
-    grid-area: imagen;
-}
+        img{
+            width: 700px;
+        }
+    }
 
-.img-pagos img{
-    width: 700px;
+    .aviso{
+        text-align: center;
+        margin-top: 6%;
+        margin-bottom: 2%;
+        grid-area: aviso;
+    }
 }
