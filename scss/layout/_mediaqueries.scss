@@ -22,6 +22,7 @@
     }
 }
 
+
 @media only screen and (max-width: 576px){
     .etiquetas{
         display: flex;
@@ -43,6 +44,12 @@
     footer, .creditos{
         display: flex;
         flex-direction: column;
+        gap: 2%;
+
+        .wsp{
+            align-items: start;
+            margin: 0 auto;
+        }
     }
 
     .ropa-hombre{

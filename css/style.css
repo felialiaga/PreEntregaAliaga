@@ -32,18 +32,19 @@ body {
 }
 
 footer {
-  height: 35vh;
+  height: auto;
   background-color: #D7C0AE;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20vh 10vh;
+  grid-template-rows: 2fr 1fr;
   grid-template-areas: "ig wsp" "creditos creditos";
 }
 footer .ig {
   grid-area: ig;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  margin: 0 auto;
   gap: 3%;
 }
 footer .ig h3 {
@@ -51,18 +52,30 @@ footer .ig h3 {
 }
 footer .ig-feli {
   display: flex;
-  padding: 2%;
   gap: 3%;
+  padding: 2%;
+}
+footer .ig-feli h4 {
+  margin-bottom: 0;
 }
 footer .ig-andre {
   display: flex;
   gap: 3%;
+  padding: 2%;
+}
+footer .ig-andre h4 {
+  margin-bottom: 0;
+}
+footer .ig .footer-img {
+  margin-left: 0;
 }
 footer .wsp {
   grid-area: wsp;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  justify-content: start;
+  margin: 0 auto;
   gap: 3%;
 }
 footer .wsp h3 {
@@ -71,12 +84,19 @@ footer .wsp h3 {
 footer .wsp-feli {
   display: flex;
   padding: 2%;
+  align-items: center;
+}
+footer .wsp-feli h4 {
+  margin-bottom: 0;
 }
 footer .creditos {
   grid-area: creditos;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+footer .creditos p {
+  margin-bottom: 0;
 }
 footer .footer-img {
   width: 30px;
@@ -88,16 +108,24 @@ footer .footer-img {
   grid-template-rows: auto;
   margin-top: 2%;
   align-content: center;
+  mix-blend-mode: color-burn;
 }
 .etiquetas .etiqueta {
   padding: 2%;
   border-right: 1px solid black;
+  margin-bottom: 0;
 }
 .etiquetas .etiqueta__superior {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1%;
+}
+.etiquetas .etiqueta__superior img, .etiquetas .etiqueta__superior h3 {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .etiquetas .etiqueta__superior .img-etiquetas {
   width: 40px;
@@ -224,7 +252,7 @@ footer .footer-img {
 .galeria img:hover {
   animation-name: animacion1;
   animation-timing-function: ease-in;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 .galeria .foto1 {
   grid-area: foto1;
@@ -341,6 +369,11 @@ footer .footer-img {
   footer, .creditos {
     display: flex;
     flex-direction: column;
+    gap: 2%;
+  }
+  footer .wsp, .creditos .wsp {
+    align-items: start;
+    margin: 0 auto;
   }
   .ropa-hombre {
     display: flex;

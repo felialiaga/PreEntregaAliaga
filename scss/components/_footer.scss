@@ -1,9 +1,9 @@
 footer{
-    height: 35vh;
+    height: auto;
     background-color: #D7C0AE;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20vh 10vh;
+    grid-template-rows: 2fr 1fr;
     grid-template-areas: 
     'ig wsp'
     'creditos creditos'
@@ -12,27 +12,41 @@ footer{
         grid-area: ig;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
+        margin: 0 auto;
         gap: 3%;
         h3{
             font-size: 40px;
         }
+
         &-feli{
             display: flex;
-            padding: 2%;
             gap: 3%;
+            padding: 2%;
+            h4{
+                margin-bottom: 0;
+            }
         }
+
         &-andre{
             display: flex;
             gap: 3%;
+            padding: 2%;
+            h4{
+                margin-bottom: 0;
+            }
+        }
+
+        .footer-img{
+            margin-left: 0;
         }
     }
 
     .wsp{
         grid-area: wsp;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, start);
+        justify-content: start;
+        margin: 0 auto;
         gap: 3%;
         h3{
             font-size: 40px;
@@ -40,6 +54,10 @@ footer{
         &-feli{
             display: flex;
             padding: 2%;
+            align-items: center;
+            h4{
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -48,6 +66,9 @@ footer{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        p{
+            margin-bottom: 0;
+        }
     }
 
     .footer-img{
